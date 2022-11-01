@@ -1,0 +1,26 @@
+{
+    "name": "monaco-govaluate",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/SyMind/monaco-govaluate.git",
+    "author": "SyMind <dacongsama@live.com>",
+    "license": "MIT",
+    "scripts": {
+        "dev": "webpack serve --config ./scripts/webpack.dev.js",
+        "prod": "webpack --config ./scripts/webpack.prod.js",
+        "deploy": "npm run prod && gh-pages -d docs"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.19.6",
+        "babel-loader": "^9.0.1",
+        "css-loader": "^6.7.1",
+        "gh-pages": "^4.0.0",
+        "html-webpack-plugin": "^5.5.0",
+        "monaco-editor": "^0.34.1",
+        "style-loader": "^3.3.1",
+        "webpack": "^5.74.0",
+        "webpack-bundle-analyzer": "^4.7.0",
+        "webpack-cli": "^4.10.0",
+        "webpack-dev-server": "^4.11.1"
+    }
+}

@@ -1,2 +1,3 @@
-# monaco-govaluate
-govaluate for monaco-editor
+# Monaco Govaluate
+
+[Govaluate](https://github.com/Knetic/govaluate) expressions plugin for the Monaco Editor.
