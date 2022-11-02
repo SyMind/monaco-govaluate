@@ -1,9 +1,9 @@
-import { languages } from 'monaco-editor';
+import { registerLanguage } from 'monaco-editor/esm/vs/basic-languages/_.contribution';
 
-languages.register({
-	id: 'govaluate'
+registerLanguage({
+    id: 'govaluate',
+    loader: () => {
+		return import('./govaluate')
+	}
 })
 
-languages.onLanguage('govaluate', () => {
-	return import('./govaluate');
-})
