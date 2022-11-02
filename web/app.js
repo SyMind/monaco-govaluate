@@ -1,5 +1,5 @@
 import * as monaco from 'monaco-editor'
-import 'monaco-editor/esm/vs/basic-languages/javascript/javascript.contribution'
+import '../src/govaluate.contribution'
 import './style.css'
 
 self.MonacoEnvironment = {
@@ -21,6 +21,19 @@ self.MonacoEnvironment = {
 }
 
 monaco.editor.create(document.getElementById('container'), {
-	value: 'console.log("Hello, world")',
-	language: 'javascript'
+	value: '(mem_used / total_mem) * 100',
+	language: 'govaluate',
+    wordWrap: 'off',
+    lineNumbers: 'off',
+    lineNumbersMinChars: 0,
+    overviewRulerLanes: 0,
+    overviewRulerBorder: false,
+    lineDecorationsWidth: 0,
+    hideCursorInOverviewRuler: true,
+    glyphMargin: false,
+    folding: false,
+    scrollBeyondLastColumn: 0,
+    scrollbar: {horizontal: 'hidden', vertical: 'hidden'},
+    find: {addExtraSpaceOnTop: false, autoFindInSelection: 'never', seedSearchStringFromSelection: false},
+    minimap: {enabled: false},
 })
