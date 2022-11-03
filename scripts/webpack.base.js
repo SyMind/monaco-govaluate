@@ -9,7 +9,13 @@ module.exports = {
 	},
 	entry: {
 		app: path.resolve(__dirname, '../web/app.js'),
-        'editor.worker': 'monaco-editor/esm/vs/editor/editor.worker.js'
+        'editor.worker': 'monaco-editor/esm/vs/editor/editor.worker.js',
+        'govaluate.worker': path.resolve(__dirname, '../src/govaluate.worker.ts')
+	},
+    output: {
+		globalObject: 'self',
+		filename: '[name].bundle.js',
+		path: path.resolve(__dirname, 'dist')
 	},
 	module: {
 		rules: [
