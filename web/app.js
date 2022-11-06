@@ -1,5 +1,5 @@
 import * as monaco from 'monaco-editor'
-import '../src/govaluate.contribution'
+import '../src/monaco.contribution'
 import './style.css'
 
 self.MonacoEnvironment = {
